@@ -1,0 +1,951 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menna Geramy | Data Engineering Student & Portfolio</title>
+  <meta name="description" content="Portfolio of Menna Geramy - Third-year Computer Science Student at Zagazig University developing practical skills in Data Engineering, Data Warehousing, SQL, and ETL Pipelines.">
+  <meta name="keywords" content="Menna Geramy, Data Engineering Student, SQL, Python, ETL, Data Warehousing, Bronze Silver Gold, Zagazig University, Portfolio">
+  <meta name="author" content="Menna Geramy">
+  
+  <!-- Open Graph / Meta -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Menna Geramy | Data Engineering Student">
+  <meta property="og:description" content="Computer Science student at Zagazig University specializing in Data Engineering, Data Warehousing, SQL, and ETL Pipelines.">
+  <meta property="og:image" content="assets/menna-geramy.jpg">
+
+  <!-- Google Fonts: Outfit, JetBrains Mono, & Alexandria for Arabic -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Background Animated Data Stream Gradients -->
+  <div class="bg-glow-container" aria-hidden="true">
+    <div class="glow-orb orb-1"></div>
+    <div class="glow-orb orb-2"></div>
+    <div class="glow-orb orb-3"></div>
+    <div class="grid-overlay"></div>
+  </div>
+
+  <!-- NAVIGATION BAR -->
+  <header class="navbar-wrapper" id="header">
+    <nav class="navbar container" aria-label="Main Navigation">
+      <a href="#home" class="nav-brand" aria-label="Menna Geramy Home">
+        <div class="brand-badge">
+          <span class="pipeline-dot"></span>
+          <span class="brand-text">MG<span class="brand-accent">.data</span></span>
+        </div>
+      </a>
+
+      <!-- Desktop & Mobile Menu -->
+      <div class="nav-menu" id="navMenu">
+        <ul class="nav-links">
+          <li><a href="#home" class="nav-link active" data-nav="home"><span data-i18n="nav.home">Home</span></a></li>
+          <li><a href="#about" class="nav-link" data-nav="about"><span data-i18n="nav.about">About Me</span></a></li>
+          <li><a href="#skills" class="nav-link" data-nav="skills"><span data-i18n="nav.skills">Skills</span></a></li>
+          <li><a href="#education" class="nav-link" data-nav="education"><span data-i18n="nav.education">Education</span></a></li>
+          <li><a href="#training" class="nav-link" data-nav="training"><span data-i18n="nav.training">Training & Certs</span></a></li>
+          <li><a href="#projects" class="nav-link" data-nav="projects"><span data-i18n="nav.projects">Projects</span></a></li>
+          <li><a href="#services" class="nav-link" data-nav="services"><span data-i18n="nav.services">Services</span></a></li>
+          <li><a href="#contact" class="nav-link" data-nav="contact"><span data-i18n="nav.contact">Contact</span></a></li>
+        </ul>
+      </div>
+
+      <div class="nav-actions">
+        <!-- Language Switcher (EN / AR) -->
+        <button id="langToggle" class="control-btn lang-btn" aria-label="Toggle Language" title="Switch Language">
+          <span class="lang-code" id="langLabel">AR</span>
+          <svg class="control-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+        </button>
+
+        <!-- Theme Switcher (Dark / Light) -->
+        <button id="themeToggle" class="control-btn theme-btn" aria-label="Toggle Theme" title="Switch Theme">
+          <svg class="control-icon moon-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+          <svg class="control-icon sun-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+        </button>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button id="hamburgerBtn" class="hamburger-btn" aria-label="Open Navigation Menu" aria-expanded="false">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- 1. HOME / HERO SECTION -->
+    <section class="hero-section" id="home">
+      <div class="container hero-container">
+        <div class="hero-content">
+          <div class="hero-pill-badge">
+            <span class="pulse-indicator"></span>
+            <span data-i18n="hero.status">Data Engineering Student • Zagazig University</span>
+          </div>
+
+          <h1 class="hero-title">
+            <span data-i18n="hero.greeting">Hello, I'm</span>
+            <span class="gradient-text hero-name">Menna Geramy</span>
+          </h1>
+
+          <div class="hero-typewriter-wrapper">
+            <span class="typewriter-prefix" data-i18n="hero.rolePrefix">Focused on</span>
+            <span class="typewriter-text" id="typewriter">Data Warehousing</span>
+            <span class="typewriter-cursor">|</span>
+          </div>
+
+          <p class="hero-description" data-i18n="hero.bio">
+            Third-year Computer Science student at Zagazig University with a strong interest in Data Engineering. Developing practical skills in SQL, Python, Data Warehousing, data processing, and database technologies through university study, training programs, and practical projects.
+          </p>
+
+          <div class="hero-meta-badges">
+            <div class="meta-tag">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              <span data-i18n="hero.location">Egypt</span>
+            </div>
+            <div class="meta-tag">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"></path><path d="M6 12v5c3 3 9 3 12 0v-5"></path></svg>
+              <span data-i18n="hero.year">Third Year • Computer Science</span>
+            </div>
+            <div class="meta-tag highlight-tag">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+              <span data-i18n="hero.depi">DEPI Trainee</span>
+            </div>
+          </div>
+
+          <!-- Hero Action Buttons -->
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary" id="heroBtnProjects">
+              <span data-i18n="hero.btnProjects">View My Projects</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </a>
+            <a href="#contact" class="btn btn-secondary" id="heroBtnContact">
+              <span data-i18n="hero.btnContact">Contact Me</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+            </a>
+            <a href="https://github.com/menna753-afk" target="_blank" rel="noopener noreferrer" class="btn btn-outline" id="heroBtnGithub" title="GitHub Profile">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+              <span>GitHub</span>
+            </a>
+          </div>
+
+          <!-- Social Quick Links -->
+          <div class="hero-socials">
+            <span class="social-label" data-i18n="hero.connect">Connect:</span>
+            <a href="https://wa.me/201008684319" target="_blank" rel="noopener noreferrer" class="social-icon-link" aria-label="WhatsApp" title="WhatsApp">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+            </a>
+            <a href="mailto:mhamg7589@gmail.com" class="social-icon-link" aria-label="Email" title="Email">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+            </a>
+            <a href="https://www.linkedin.com/in/menna-geramy-63521324b" target="_blank" rel="noopener noreferrer" class="social-badge-link" title="LinkedIn">LinkedIn</a>
+            <a href="https://mostaql.com/u/menna_Geramy11" target="_blank" rel="noopener noreferrer" class="social-badge-link" title="Mostaql">Mostaql</a>
+            <a href="https://khamsat.com/user/menna_geramy11" target="_blank" rel="noopener noreferrer" class="social-badge-link" title="Khamsat">Khamsat</a>
+            <a href="https://kafiil.com/u/menna_geramy07" target="_blank" rel="noopener noreferrer" class="social-badge-link" title="Kafiil">Kafiil</a>
+          </div>
+        </div>
+
+        <!-- HERO VISUAL: Featuring Personal Photo with Elegant Data Accent Frame -->
+        <div class="hero-visual">
+          <div class="profile-card-glow">
+            <div class="profile-image-frame">
+              <img src="assets/menna-geramy.jpg" alt="Menna Geramy" class="profile-photo" id="profileImage">
+              <div class="profile-image-overlay"></div>
+              <div class="profile-status-float">
+                <span class="pulse-indicator"></span>
+                <span data-i18n="hero.photoStatus">Data Engineering Student</span>
+              </div>
+            </div>
+
+            <div class="profile-caption">
+              <span class="caption-name">Menna Geramy</span>
+              <span class="caption-title" data-i18n="hero.captionSub">Zagazig University • CS Dept</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. ABOUT ME SECTION -->
+    <section class="section about-section" id="about">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag" data-i18n="about.tag">Get To Know Me</div>
+          <h2 class="section-title" data-i18n="about.title">About Me</h2>
+          <div class="section-bar"></div>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-text-card">
+            <h3 class="about-greeting" data-i18n="about.lead">
+              Transforming Raw Data into Organized and Useful Information.
+            </h3>
+            <p class="about-para" data-i18n="about.p1">
+              Hello, I'm Menna Geramy, a third-year Computer Science student at Zagazig University with a strong interest in Data Engineering.
+            </p>
+            <p class="about-para" data-i18n="about.p2">
+              I am currently developing my skills in SQL, Python, Data Warehousing, data processing, and related technologies through university study, training programs, and practical projects.
+            </p>
+            <p class="about-para" data-i18n="about.p3">
+              I enjoy working with data, learning new technologies, and transforming raw data into organized and useful information. My goal is to become a professional Data Engineer and continue my academic journey toward a Master's degree after graduation.
+            </p>
+
+            <!-- Career Goal Card -->
+            <div class="career-goal-card">
+              <div class="goal-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"></polygon></svg>
+              </div>
+              <div class="goal-info">
+                <h4 class="goal-title" data-i18n="about.goalTitle">Career Goal</h4>
+                <p class="goal-intro" data-i18n="about.goalIntro">
+                  My goal is to become a professional Data Engineer with strong skills in:
+                </p>
+                <div class="career-goal-pills">
+                  <span class="goal-pill">Data Warehousing</span>
+                  <span class="goal-pill">ETL / ELT</span>
+                  <span class="goal-pill">SQL</span>
+                  <span class="goal-pill">Data Pipelines</span>
+                  <span class="goal-pill">Big Data Technologies</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Quick Highlights Column -->
+          <div class="about-highlights-col">
+            <div class="highlight-box">
+              <div class="highlight-icon">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
+              </div>
+              <div class="highlight-details">
+                <h4 data-i18n="about.academicTitle">Academic Pursuit</h4>
+                <p data-i18n="about.academicDesc">Third-year Computer Science student at Zagazig University, aiming for a Master's degree post-graduation.</p>
+              </div>
+            </div>
+
+            <div class="highlight-box">
+              <div class="highlight-icon">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><ellipse cx="12" cy="5" rx="9" ry="3"></ellipse><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path></svg>
+              </div>
+              <div class="highlight-details">
+                <h4 data-i18n="about.focusTitle">Skill Development</h4>
+                <p data-i18n="about.focusDesc">Developing skills in SQL, Python, Data Warehousing, and data processing through practical projects.</p>
+              </div>
+            </div>
+
+            <div class="highlight-box">
+              <div class="highlight-icon">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="7"></circle><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline></svg>
+              </div>
+              <div class="highlight-details">
+                <h4 data-i18n="about.trainingTitle">Programs & Training</h4>
+                <p data-i18n="about.trainingDesc">Enrolled in Digital Egypt Pioneers Initiative (DEPI - Data Engineering Track), Creativa, and DataCamp.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. SKILLS SECTION -->
+    <section class="section skills-section" id="skills">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag" data-i18n="skills.tag">Technical Capabilities</div>
+          <h2 class="section-title" data-i18n="skills.title">Skills</h2>
+          <div class="section-bar"></div>
+        </div>
+
+        <div class="skills-grid">
+          <!-- Category 1: Data Engineering -->
+          <div class="skill-category-card highlight-category">
+            <div class="category-header">
+              <div class="category-icon de-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
+              </div>
+              <div>
+                <h3 class="category-title" data-i18n="skills.deTitle">Data Engineering</h3>
+                <span class="category-sub" data-i18n="skills.deSub">Core Focus & Concepts</span>
+              </div>
+            </div>
+            <div class="skill-pills">
+              <span class="skill-pill">Data Warehousing</span>
+              <span class="skill-pill">ETL / ELT</span>
+              <span class="skill-pill">Data Cleaning</span>
+              <span class="skill-pill">Data Processing</span>
+              <span class="skill-pill">Star Schema</span>
+              <span class="skill-pill">Fact & Dimension Tables</span>
+              <span class="skill-pill">Data Flow</span>
+            </div>
+          </div>
+
+          <!-- Category 2: Programming -->
+          <div class="skill-category-card">
+            <div class="category-header">
+              <div class="category-icon prog-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+              </div>
+              <div>
+                <h3 class="category-title" data-i18n="skills.progTitle">Programming</h3>
+                <span class="category-sub" data-i18n="skills.progSub">Languages & Paradigms</span>
+              </div>
+            </div>
+            <div class="skill-pills">
+              <span class="skill-pill status-pill">Python <span class="pill-badge" data-i18n="skills.intermediate">Intermediate</span></span>
+              <span class="skill-pill status-pill">C++ <span class="pill-badge">OOP</span></span>
+              <span class="skill-pill">HTML</span>
+              <span class="skill-pill">CSS</span>
+              <span class="skill-pill status-pill">JavaScript <span class="pill-badge learning" data-i18n="skills.learning">Learning</span></span>
+            </div>
+          </div>
+
+          <!-- Category 3: Databases -->
+          <div class="skill-category-card">
+            <div class="category-header">
+              <div class="category-icon db-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><ellipse cx="12" cy="5" rx="9" ry="3"></ellipse><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path></svg>
+              </div>
+              <div>
+                <h3 class="category-title" data-i18n="skills.dbTitle">Databases</h3>
+                <span class="category-sub" data-i18n="skills.dbSub">Design, Queries & Storage</span>
+              </div>
+            </div>
+            <div class="skill-pills">
+              <span class="skill-pill">SQL</span>
+              <span class="skill-pill">SQL Server</span>
+              <span class="skill-pill">Database Design</span>
+              <span class="skill-pill">SQL Queries</span>
+              <span class="skill-pill">Stored Procedures</span>
+              <span class="skill-pill">Data Warehousing</span>
+            </div>
+          </div>
+
+          <!-- Category 4: Tools -->
+          <div class="skill-category-card">
+            <div class="category-header">
+              <div class="category-icon tools-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg>
+              </div>
+              <div>
+                <h3 class="category-title" data-i18n="skills.toolsTitle">Tools</h3>
+                <span class="category-sub" data-i18n="skills.toolsSub">Version Control & Workspaces</span>
+              </div>
+            </div>
+            <div class="skill-pills">
+              <span class="skill-pill">Git</span>
+              <span class="skill-pill">GitHub</span>
+              <span class="skill-pill">Google Colab</span>
+              <span class="skill-pill">Jupyter Notebook</span>
+              <span class="skill-pill">Kaggle</span>
+              <span class="skill-pill">Draw.io</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. EDUCATION SECTION -->
+    <section class="section education-section" id="education">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag" data-i18n="education.tag">Academic Background</div>
+          <h2 class="section-title" data-i18n="education.title">Education</h2>
+          <div class="section-bar"></div>
+        </div>
+
+        <div class="education-card">
+          <div class="edu-icon-wrap">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"></path><path d="M6 12v5c3 3 9 3 12 0v-5"></path></svg>
+          </div>
+          <div class="edu-body">
+            <div class="edu-top-row">
+              <h3 class="edu-degree" data-i18n="education.university">Zagazig University</h3>
+              <span class="edu-badge" data-i18n="education.status">Third Year</span>
+            </div>
+            <h4 class="edu-university" data-i18n="education.dept">Computer Science Department</h4>
+            
+            <div class="edu-details-list">
+              <div class="edu-detail-item">
+                <span class="detail-label" data-i18n="education.deptLabel">Faculty / Department:</span>
+                <span class="detail-value" data-i18n="education.deptValue">Computer Science</span>
+              </div>
+              <div class="edu-detail-item">
+                <span class="detail-label" data-i18n="education.yearLabel">Academic Year:</span>
+                <span class="detail-value" data-i18n="education.yearValue">Third Year</span>
+              </div>
+              <div class="edu-detail-item">
+                <span class="detail-label" data-i18n="education.locationLabel">Location:</span>
+                <span class="detail-value" data-i18n="education.locationValue">Egypt</span>
+              </div>
+            </div>
+
+            <p class="edu-note" data-i18n="education.note">
+              Studying Computer Science at Zagazig University while advancing practical skills in Data Engineering, Data Warehousing, SQL, and Python through specialized training programs and practical projects.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. TRAINING & CERTIFICATES SECTION -->
+    <section class="section training-section" id="training">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag" data-i18n="training.tag">Professional Growth</div>
+          <h2 class="section-title" data-i18n="training.title">Training & Certificates</h2>
+          <div class="section-bar"></div>
+        </div>
+
+        <div class="training-grid">
+          <!-- Column 1: Training & Programs -->
+          <div class="training-column">
+            <h3 class="column-title">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline></svg>
+              <span data-i18n="training.programsTitle">Training & Programs</span>
+            </h3>
+
+            <div class="timeline-container">
+              <div class="timeline-item featured-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                  <span class="timeline-badge" data-i18n="training.depiBadge">Featured Initiative</span>
+                  <h4 class="timeline-name" data-i18n="training.depiTitle">Digital Egypt Pioneers Initiative (DEPI)</h4>
+                  <p class="timeline-track" data-i18n="training.depiTrack">Data Engineering Track</p>
+                </div>
+              </div>
+
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                  <h4 class="timeline-name">Creativa IT Training</h4>
+                  <p class="timeline-track" data-i18n="training.creativa1">IT & Technical Skills Development</p>
+                </div>
+              </div>
+
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                  <h4 class="timeline-name">Creativa Ismailia</h4>
+                  <p class="timeline-track" data-i18n="training.creativa2">Specialized Training Program</p>
+                </div>
+              </div>
+
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                  <h4 class="timeline-name">DataCamp</h4>
+                  <p class="timeline-track" data-i18n="training.datacamp">Interactive Data Learning & Practice</p>
+                </div>
+              </div>
+
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                  <h4 class="timeline-name" data-i18n="training.webDevTitle">Web Development Training</h4>
+                  <p class="timeline-track" data-i18n="training.webDevTrack">Web Fundamentals (HTML, CSS, JS)</p>
+                </div>
+              </div>
+
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                  <h4 class="timeline-name" data-i18n="training.roboticsTitle">Robotics Training</h4>
+                  <p class="timeline-track" data-i18n="training.roboticsTrack">Robotics and Hardware Systems</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Column 2: Certificates -->
+          <div class="training-column">
+            <h3 class="column-title">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="7"></circle><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline></svg>
+              <span data-i18n="training.certsTitle">Certificates</span>
+            </h3>
+
+            <div class="cert-cards-list">
+              <!-- Cert 1 -->
+              <div class="cert-card">
+                <div class="cert-badge-icon">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><ellipse cx="12" cy="5" rx="9" ry="3"></ellipse><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path></svg>
+                </div>
+                <div class="cert-info">
+                  <span class="cert-issuer">DataCamp</span>
+                  <h4 class="cert-title" data-i18n="training.certSQL">SQL Certificate</h4>
+                </div>
+              </div>
+
+              <!-- Cert 2 -->
+              <div class="cert-card">
+                <div class="cert-badge-icon">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+                </div>
+                <div class="cert-info">
+                  <span class="cert-issuer">DataCamp</span>
+                  <h4 class="cert-title" data-i18n="training.certRobotics">Robotics Certificate</h4>
+                </div>
+              </div>
+
+              <!-- Additional Certificates Note Card -->
+              <div class="cert-card placeholder-card">
+                <div class="cert-badge-icon plus-icon">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="16"></line><line x1="8" y1="12" x2="16" y2="12"></line></svg>
+                </div>
+                <div class="cert-info">
+                  <h4 class="cert-title" data-i18n="training.moreCertsTitle">Additional Certificates</h4>
+                  <p class="cert-desc" data-i18n="training.moreCertsDesc">Additional certificates may be added later.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. PROJECTS SECTION -->
+    <section class="section projects-section" id="projects">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag" data-i18n="projects.tag">Portfolio Highlights</div>
+          <h2 class="section-title" data-i18n="projects.title">Projects</h2>
+          <div class="section-bar"></div>
+        </div>
+
+        <div class="projects-grid">
+          <!-- Featured Project: C++ OOP Calculator -->
+          <article class="project-card featured-project" id="projectCppCalculator">
+            <div class="project-banner">
+              <div class="banner-status-tag">
+                <span class="code-dot"></span>
+                <span data-i18n="projects.cppBadge">Academic Project • C++ / OOP</span>
+              </div>
+              <span class="scope-tag">Object-Oriented Programming</span>
+            </div>
+
+            <!-- OOP Structure Visual Flow -->
+            <div class="project-placeholder-visual">
+              <div class="oop-diagram">
+                <div class="oop-node">
+                  <span class="node-icon">📦</span>
+                  <span class="node-name">BaseData</span>
+                  <span class="node-sub" data-i18n="projects.oopDataSub">Encapsulation & Data</span>
+                </div>
+                <div class="step-arrow">→</div>
+                <div class="oop-node">
+                  <span class="node-icon">⚙️</span>
+                  <span class="node-name">Operations</span>
+                  <span class="node-sub" data-i18n="projects.oopOpsSub">Modular Logic</span>
+                </div>
+                <div class="step-arrow">→</div>
+                <div class="oop-node">
+                  <span class="node-icon">🧮</span>
+                  <span class="node-name">Calculator</span>
+                  <span class="node-sub" data-i18n="projects.oopCalcSub">System Coordinator</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-content">
+              <div class="project-title-row">
+                <h3 class="project-title" data-i18n="projects.cppTitle">C++ OOP Calculator</h3>
+                <a href="https://github.com/menna753-afk" target="_blank" rel="noopener noreferrer" class="project-link-badge" title="View GitHub Profile">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                  <span>GitHub</span>
+                </a>
+              </div>
+              
+              <p class="project-desc" data-i18n="projects.cppDesc">
+                A calculator application developed using Object-Oriented Programming in C++.
+              </p>
+
+              <!-- Concepts Used -->
+              <div class="project-structure-box">
+                <span class="tech-label" data-i18n="projects.cppConceptsLabel">Concepts Used:</span>
+                <div class="tech-pills-wrap">
+                  <span class="tech-pill highlight-pill">Classes</span>
+                  <span class="tech-pill highlight-pill">Objects</span>
+                  <span class="tech-pill highlight-pill">Encapsulation</span>
+                  <span class="tech-pill highlight-pill">OOP</span>
+                  <span class="tech-pill highlight-pill">Modular Programming</span>
+                </div>
+              </div>
+
+              <!-- Project Structure -->
+              <div class="project-structure-box">
+                <span class="tech-label" data-i18n="projects.cppStructLabel">Project Structure:</span>
+                <div class="structure-flow">
+                  <span class="struct-node">BaseData</span>
+                  <span class="flow-sym">→</span>
+                  <span class="struct-node">Operations</span>
+                  <span class="flow-sym">→</span>
+                  <span class="struct-node">Calculator</span>
+                </div>
+              </div>
+
+              <!-- Interactive C++ OOP Calculator Simulation -->
+              <div class="calc-simulation-box">
+                <div class="calc-sim-header">
+                  <span class="sim-badge" data-i18n="projects.simBadge">Interactive OOP Simulation</span>
+                  <span class="sim-lang">C++ Logic Engine</span>
+                </div>
+                
+                <div class="calc-sim-body">
+                  <div class="calc-inputs-row">
+                    <input type="number" id="calcNum1" class="calc-input" placeholder="Number 1" value="25">
+                    <select id="calcOp" class="calc-input calc-select">
+                      <option value="+">+</option>
+                      <option value="-">-</option>
+                      <option value="*">×</option>
+                      <option value="/">÷</option>
+                    </select>
+                    <input type="number" id="calcNum2" class="calc-input" placeholder="Number 2" value="5">
+                    <button type="button" id="calcRunBtn" class="btn btn-primary btn-calc-run" data-i18n="projects.btnRunCalc">Run Method</button>
+                  </div>
+
+                  <div class="calc-terminal-output" id="calcOutput">
+                    <div class="terminal-line"><span class="t-scope">[BaseData]</span> Encapsulating num1 = 25, num2 = 5</div>
+                    <div class="terminal-line"><span class="t-scope">[Operations]</span> Executing: 25 + 5</div>
+                    <div class="terminal-line t-result"><span class="t-scope">[Calculator]</span> Result = 30</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- FUTURE PROJECTS SECTION & EASILY EXPANDABLE PIPELINE -->
+        <div class="future-projects-wrapper">
+          <div class="future-header-card">
+            <div class="future-badge-wrap">
+              <span class="pulse-indicator"></span>
+              <span class="future-badge-text" data-i18n="projects.futureBadge">Pipeline & Roadmap</span>
+            </div>
+            <h3 class="future-title" data-i18n="projects.futureTitle">Future Projects</h3>
+            <p class="future-lead" data-i18n="projects.futureLead">
+              Additional Data Engineering, SQL, and data-processing projects will be added to the portfolio as they are completed.
+            </p>
+          </div>
+
+          <!-- Future Pipeline Roadmap Grid (Ready for Menna to update) -->
+          <div class="future-grid">
+            <!-- Pipeline 1: Data Warehousing -->
+            <div class="future-card">
+              <div class="future-card-status">
+                <span class="status-upcoming-tag" data-i18n="projects.upcomingTag">Upcoming Project</span>
+                <span class="future-domain-pill">Data Engineering</span>
+              </div>
+              <h4 class="future-card-title" data-i18n="projects.f1Title">Data Warehousing & Star Schema Pipeline</h4>
+              <p class="future-card-desc" data-i18n="projects.f1Desc">
+                Multi-layer data warehouse implementation featuring Star Schema modeling, Fact and Dimension tables, and structured data flow.
+              </p>
+              <div class="future-tags">
+                <span>Data Warehousing</span>
+                <span>Star Schema</span>
+                <span>Fact & Dimension Tables</span>
+                <span>Data Flow</span>
+              </div>
+            </div>
+
+            <!-- Pipeline 2: SQL Server & Databases -->
+            <div class="future-card">
+              <div class="future-card-status">
+                <span class="status-upcoming-tag" data-i18n="projects.upcomingTag">Upcoming Project</span>
+                <span class="future-domain-pill">Databases</span>
+              </div>
+              <h4 class="future-card-title" data-i18n="projects.f2Title">SQL Server Database & Stored Procedures</h4>
+              <p class="future-card-desc" data-i18n="projects.f2Desc">
+                Comprehensive relational database design, complex analytical SQL queries, and automated stored procedures on SQL Server.
+              </p>
+              <div class="future-tags">
+                <span>SQL Server</span>
+                <span>Database Design</span>
+                <span>Stored Procedures</span>
+                <span>SQL Queries</span>
+              </div>
+            </div>
+
+            <!-- Pipeline 3: Python & Data Processing -->
+            <div class="future-card">
+              <div class="future-card-status">
+                <span class="status-upcoming-tag" data-i18n="projects.upcomingTag">Upcoming Project</span>
+                <span class="future-domain-pill">Data Processing</span>
+              </div>
+              <h4 class="future-card-title" data-i18n="projects.f3Title">Python ETL & Data Processing Pipeline</h4>
+              <p class="future-card-desc" data-i18n="projects.f3Desc">
+                Python-based data cleaning and transformation pipeline using Google Colab and Jupyter Notebook to convert raw datasets into analytics-ready tables.
+              </p>
+              <div class="future-tags">
+                <span>Python</span>
+                <span>ETL / ELT</span>
+                <span>Data Cleaning</span>
+                <span>Data Processing</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Easy-to-extend Guide Card for Future Projects -->
+          <div class="add-project-hint-card">
+            <div class="hint-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="12" y1="18" x2="12" y2="12"></line><line x1="9" y1="15" x2="15" y2="15"></line></svg>
+            </div>
+            <div class="hint-text">
+              <h5 data-i18n="projects.hintTitle">Modular Architecture: Ready for New Projects</h5>
+              <p data-i18n="projects.hintDesc">New Data Engineering projects can be added seamlessly by appending to the project grid or using the modular project card template in HTML/JS.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. SERVICES SECTION -->
+    <section class="section services-section" id="services">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag" data-i18n="services.tag">What I Offer</div>
+          <h2 class="section-title" data-i18n="services.title">Services</h2>
+          <div class="section-bar"></div>
+        </div>
+
+        <div class="services-grid">
+          <!-- Service 1: Data Cleaning -->
+          <div class="service-card">
+            <div class="service-icon-box">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"></path></svg>
+            </div>
+            <h3 class="service-name" data-i18n="services.s1Title">Data Cleaning</h3>
+            <p class="service-desc" data-i18n="services.s1Desc">
+              Cleaning and organizing datasets, handling missing values, removing duplicates, and preparing data for analysis.
+            </p>
+          </div>
+
+          <!-- Service 2: SQL & SQL Server -->
+          <div class="service-card">
+            <div class="service-icon-box">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><ellipse cx="12" cy="5" rx="9" ry="3"></ellipse><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path></svg>
+            </div>
+            <h3 class="service-name" data-i18n="services.s2Title">SQL & SQL Server</h3>
+            <p class="service-desc" data-i18n="services.s2Desc">
+              Writing SQL queries, creating tables, manipulating data, and working with SQL Server databases.
+            </p>
+          </div>
+
+          <!-- Service 3: Data Preparation -->
+          <div class="service-card">
+            <div class="service-icon-box">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 16 12 14 15 10 15 8 12 2 12"></polyline><path d="M5.45 5.11L2 12v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-6l-3.45-6.89A2 2 0 0 0 16.76 4H7.24a2 2 0 0 0-1.79 1.11z"></path></svg>
+            </div>
+            <h3 class="service-name" data-i18n="services.s3Title">Data Preparation</h3>
+            <p class="service-desc" data-i18n="services.s3Desc">
+              Transforming raw datasets into clean and structured data ready for analysis.
+            </p>
+          </div>
+
+          <!-- Service 4: Python Data Processing -->
+          <div class="service-card">
+            <div class="service-icon-box">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+            </div>
+            <h3 class="service-name" data-i18n="services.s4Title">Python Data Processing</h3>
+            <p class="service-desc" data-i18n="services.s4Desc">
+              Using Python, Google Colab, and Jupyter Notebook for basic data cleaning and data processing.
+            </p>
+          </div>
+        </div>
+
+        <!-- Available on Platforms Banner -->
+        <div class="platforms-banner">
+          <div class="platforms-info">
+            <h4 data-i18n="services.hireTitle">Available for Freelance & Projects on:</h4>
+            <div class="platform-links">
+              <a href="https://mostaql.com/u/menna_Geramy11" target="_blank" rel="noopener noreferrer" class="platform-card">
+                <span class="plat-name">Mostaql</span>
+                <span class="plat-arrow">↗</span>
+              </a>
+              <a href="https://khamsat.com/user/menna_geramy11" target="_blank" rel="noopener noreferrer" class="platform-card">
+                <span class="plat-name">Khamsat</span>
+                <span class="plat-arrow">↗</span>
+              </a>
+              <a href="https://kafiil.com/u/menna_geramy07" target="_blank" rel="noopener noreferrer" class="platform-card">
+                <span class="plat-name">Kafiil</span>
+                <span class="plat-arrow">↗</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 8. CONTACT SECTION -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag" data-i18n="contact.tag">Get In Touch</div>
+          <h2 class="section-title" data-i18n="contact.title">Contact</h2>
+          <div class="section-bar"></div>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Contact Channels Info -->
+          <div class="contact-info-col">
+            <h3 class="contact-subhead" data-i18n="contact.head">Let's connect for opportunities, internships, or data projects.</h3>
+            <p class="contact-subdesc" data-i18n="contact.desc">
+              Feel free to reach out directly through email, message on WhatsApp, or connect on LinkedIn and freelance platforms.
+            </p>
+
+            <div class="contact-cards-stack">
+              <!-- Email Card -->
+              <a href="mailto:mhamg7589@gmail.com" class="direct-contact-card" title="Send Email">
+                <div class="contact-card-icon">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                </div>
+                <div class="contact-card-text">
+                  <span class="contact-type">Email</span>
+                  <span class="contact-val">mhamg7589@gmail.com</span>
+                </div>
+                <button type="button" class="action-btn-copy" id="copyEmailBtn" title="Copy Email" aria-label="Copy Email Address">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                </button>
+              </a>
+
+              <!-- WhatsApp Card -->
+              <a href="https://wa.me/201008684319" target="_blank" rel="noopener noreferrer" class="direct-contact-card" title="Chat on WhatsApp">
+                <div class="contact-card-icon whatsapp-accent">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+                </div>
+                <div class="contact-card-text">
+                  <span class="contact-type">WhatsApp</span>
+                  <span class="contact-val" dir="ltr">+20 100 868 4319</span>
+                </div>
+                <button type="button" class="action-btn-copy" id="copyPhoneBtn" title="Copy Phone Number" aria-label="Copy WhatsApp Number">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                </button>
+              </a>
+
+              <!-- Location Card -->
+              <div class="direct-contact-card non-clickable">
+                <div class="contact-card-icon">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                </div>
+                <div class="contact-card-text">
+                  <span class="contact-type" data-i18n="contact.locationLabel">Location</span>
+                  <span class="contact-val" data-i18n="contact.locationVal">Egypt</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Freelance & Profile Chips -->
+            <div class="contact-platforms-section">
+              <span class="badge-group-title" data-i18n="contact.profilesTitle">Profiles & Links</span>
+              <div class="all-profiles-grid">
+                <a href="https://github.com/menna753-afk" target="_blank" rel="noopener noreferrer" class="profile-chip">
+                  <span>GitHub</span> ↗
+                </a>
+                <a href="https://www.linkedin.com/in/menna-geramy-63521324b" target="_blank" rel="noopener noreferrer" class="profile-chip">
+                  <span>LinkedIn</span> ↗
+                </a>
+                <a href="https://mostaql.com/u/menna_Geramy11" target="_blank" rel="noopener noreferrer" class="profile-chip">
+                  <span>Mostaql</span> ↗
+                </a>
+                <a href="https://khamsat.com/user/menna_geramy11" target="_blank" rel="noopener noreferrer" class="profile-chip">
+                  <span>Khamsat</span> ↗
+                </a>
+                <a href="https://kafiil.com/u/menna_geramy07" target="_blank" rel="noopener noreferrer" class="profile-chip">
+                  <span>Kafiil</span> ↗
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Interactive Message Form -->
+          <div class="contact-form-col">
+            <div class="form-container-card">
+              <h3 class="form-title" data-i18n="contact.formTitle">Send a Message</h3>
+              <p class="form-desc" data-i18n="contact.formDesc">Submit this form to send directly via Email or open on WhatsApp.</p>
+
+              <form id="contactForm">
+                <div class="form-group">
+                  <label for="senderName" data-i18n="contact.nameLabel">Your Name</label>
+                  <input type="text" id="senderName" class="form-input" placeholder="e.g. Sarah Ahmed" required>
+                </div>
+
+                <div class="form-group">
+                  <label for="senderSubject" data-i18n="contact.subjectLabel">Subject / Service Needed</label>
+                  <select id="senderSubject" class="form-input">
+                    <option value="Data Cleaning" data-i18n="services.s1Title">Data Cleaning</option>
+                    <option value="SQL & SQL Server" data-i18n="services.s2Title">SQL & SQL Server</option>
+                    <option value="Data Preparation" data-i18n="services.s3Title">Data Preparation</option>
+                    <option value="Python Data Processing" data-i18n="services.s4Title">Python Data Processing</option>
+                    <option value="General Inquiry" data-i18n="contact.optGeneral">General Inquiry / Opportunity</option>
+                  </select>
+                </div>
+
+                <div class="form-group">
+                  <label for="senderMessage" data-i18n="contact.msgLabel">Your Message</label>
+                  <textarea id="senderMessage" rows="4" class="form-input" placeholder="Tell me about your project or data requirements..." required></textarea>
+                </div>
+
+                <div class="form-actions-split">
+                  <button type="button" id="sendWhatsAppBtn" class="btn btn-whatsapp">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+                    <span data-i18n="contact.btnWhatsApp">Send via WhatsApp</span>
+                  </button>
+
+                  <button type="submit" id="sendEmailBtn" class="btn btn-primary">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+                    <span data-i18n="contact.btnEmail">Send via Email</span>
+                  </button>
+                </div>
+
+                <div class="form-feedback" id="formFeedback"></div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer-wrapper">
+    <div class="container footer-content">
+      <div class="footer-brand">
+        <span class="pipeline-dot"></span>
+        <span class="footer-name">Menna Geramy</span>
+        <span class="footer-dot">•</span>
+        <span class="footer-sub" data-i18n="footer.sub">Data Engineering Student</span>
+      </div>
+
+      <!-- Footer Social & Profile Links (Requested) -->
+      <nav class="footer-links-nav" aria-label="Footer Links">
+        <a href="https://github.com/menna753-afk" target="_blank" rel="noopener noreferrer" class="footer-nav-link">GitHub</a>
+        <span class="footer-nav-sep">•</span>
+        <a href="https://www.linkedin.com/in/menna-geramy-63521324b" target="_blank" rel="noopener noreferrer" class="footer-nav-link">LinkedIn</a>
+        <span class="footer-nav-sep">•</span>
+        <a href="https://mostaql.com/u/menna_Geramy11" target="_blank" rel="noopener noreferrer" class="footer-nav-link">Mostaql</a>
+        <span class="footer-nav-sep">•</span>
+        <a href="https://khamsat.com/user/menna_geramy11" target="_blank" rel="noopener noreferrer" class="footer-nav-link">Khamsat</a>
+        <span class="footer-nav-sep">•</span>
+        <a href="https://kafiil.com/u/menna_geramy07" target="_blank" rel="noopener noreferrer" class="footer-nav-link">Kafiil</a>
+      </nav>
+
+      <div class="footer-copyright">
+        <p>© 2026 Menna Geramy. All Rights Reserved.</p>
+      </div>
+
+      <a href="#home" class="back-to-top" aria-label="Back to top" title="Back to top">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="19" x2="12" y2="5"></line><polyline points="5 12 12 5 19 12"></polyline></svg>
+      </a>
+    </div>
+  </footer>
+
+  <!-- Toast Notification for Copying Actions -->
+  <div class="toast-notification" id="toastNotification" role="alert" aria-live="assertive"></div>
+
+  <script src="main.js"></script>
+</body>
+</html>
